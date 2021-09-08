@@ -15,6 +15,7 @@
 		A12AB7FA26E9504B008C465E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12AB7F826E9504B008C465E /* LaunchScreen.storyboard */; };
 		A12AB80526E9504B008C465E /* To_do_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB80426E9504B008C465E /* To_do_listTests.swift */; };
 		A12AB81026E9504B008C465E /* To_do_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB80F26E9504B008C465E /* To_do_listUITests.swift */; };
+		A12AB81E26E96ACA008C465E /* TodaysList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB81D26E96ACA008C465E /* TodaysList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A12AB80B26E9504B008C465E /* To-do listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To-do listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12AB80F26E9504B008C465E /* To_do_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_do_listUITests.swift; sourceTree = "<group>"; };
 		A12AB81126E9504B008C465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12AB81D26E96ACA008C465E /* TodaysList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A12AB7EF26E95049008C465E /* SceneDelegate.swift */,
 				A12AB7F126E95049008C465E /* ViewController.swift */,
 				A12AB7F326E95049008C465E /* Main.storyboard */,
+				A12AB81D26E96ACA008C465E /* TodaysList.swift */,
 				A12AB7F626E9504B008C465E /* Assets.xcassets */,
 				A12AB7F826E9504B008C465E /* LaunchScreen.storyboard */,
 				A12AB7FB26E9504B008C465E /* Info.plist */,
@@ -261,6 +264,7 @@
 				A12AB7F226E95049008C465E /* ViewController.swift in Sources */,
 				A12AB7EE26E95049008C465E /* AppDelegate.swift in Sources */,
 				A12AB7F026E95049008C465E /* SceneDelegate.swift in Sources */,
+				A12AB81E26E96ACA008C465E /* TodaysList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
