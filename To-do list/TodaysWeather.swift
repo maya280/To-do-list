@@ -1,23 +1,23 @@
 //
-//  TodaysList.swift
+//  TodaysWeather.swift
 //  To-do list
 //
-//  Created by Dayna Grigsby on 9/8/21.
+//  Created by Dayna Grigsby on 9/9/21.
 //
 
 import UIKit
 
-class TodaysList: UIViewController {
+class TodaysWeather: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }
+
     /*
     // MARK: - Navigation
 

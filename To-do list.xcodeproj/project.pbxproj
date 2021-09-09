@@ -16,6 +16,8 @@
 		A12AB80526E9504B008C465E /* To_do_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB80426E9504B008C465E /* To_do_listTests.swift */; };
 		A12AB81026E9504B008C465E /* To_do_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB80F26E9504B008C465E /* To_do_listUITests.swift */; };
 		A12AB81E26E96ACA008C465E /* TodaysList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB81D26E96ACA008C465E /* TodaysList.swift */; };
+		A12AB82426EA99F0008C465E /* TomorrowsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB82326EA99F0008C465E /* TomorrowsList.swift */; };
+		A12AB82626EA9B3D008C465E /* TodaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AB82526EA9B3C008C465E /* TodaysWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A12AB80F26E9504B008C465E /* To_do_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_do_listUITests.swift; sourceTree = "<group>"; };
 		A12AB81126E9504B008C465E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12AB81D26E96ACA008C465E /* TodaysList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysList.swift; sourceTree = "<group>"; };
+		A12AB82326EA99F0008C465E /* TomorrowsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowsList.swift; sourceTree = "<group>"; };
+		A12AB82526EA9B3C008C465E /* TodaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				A12AB7EF26E95049008C465E /* SceneDelegate.swift */,
 				A12AB7F126E95049008C465E /* ViewController.swift */,
 				A12AB7F326E95049008C465E /* Main.storyboard */,
+				A12AB82526EA9B3C008C465E /* TodaysWeather.swift */,
+				A12AB82326EA99F0008C465E /* TomorrowsList.swift */,
 				A12AB81D26E96ACA008C465E /* TodaysList.swift */,
 				A12AB7F626E9504B008C465E /* Assets.xcassets */,
 				A12AB7F826E9504B008C465E /* LaunchScreen.storyboard */,
@@ -263,7 +269,9 @@
 			files = (
 				A12AB7F226E95049008C465E /* ViewController.swift in Sources */,
 				A12AB7EE26E95049008C465E /* AppDelegate.swift in Sources */,
+				A12AB82426EA99F0008C465E /* TomorrowsList.swift in Sources */,
 				A12AB7F026E95049008C465E /* SceneDelegate.swift in Sources */,
+				A12AB82626EA9B3D008C465E /* TodaysWeather.swift in Sources */,
 				A12AB81E26E96ACA008C465E /* TodaysList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,20 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzN-wt-8zb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzN-wt-8zb" userLabel="TodaysList">
                                 <rect key="frame" x="143" y="433" width="128" height="30"/>
                                 <state key="normal" title="Today's To-Do List"/>
                                 <connections>
-                                    <action selector="m_hello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSA-PR-38o"/>
+                                    <segue destination="qo3-K0-n9I" kind="presentation" id="x5f-yW-VfR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4d-PR-Om5">
                                 <rect key="frame" x="129" y="493" width="156" height="30"/>
                                 <state key="normal" title="Tomorrow's To-Do List"/>
+                                <connections>
+                                    <segue destination="s8V-Ty-jA2" kind="presentation" id="Qvh-Q0-DgJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c22-nA-Inx">
                                 <rect key="frame" x="149.5" y="553" width="115" height="30"/>
                                 <state key="normal" title="Today's Weather"/>
+                                <connections>
+                                    <segue destination="1cO-5Y-iLB" kind="presentation" id="sjO-uT-Pso"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maya's To-do Tracker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eto-mH-rpL">
                                 <rect key="frame" x="124.5" y="382.5" width="165" height="20.5"/>
@@ -51,14 +57,117 @@
                             <constraint firstItem="M4d-PR-Om5" firstAttribute="top" secondItem="OzN-wt-8zb" secondAttribute="bottom" constant="30" id="jNq-BP-kAl"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="AppTitle" destination="eto-mH-rpL" id="7MA-IZ-Q8U"/>
-                        <outlet property="Hello" destination="OzN-wt-8zb" id="BEs-fv-Qec"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="78"/>
+        </scene>
+        <!--Todays List-->
+        <scene sceneID="bTH-kW-lC6">
+            <objects>
+                <viewController id="qo3-K0-n9I" customClass="TodaysList" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W1f-SH-SLw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's To-Do List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1f-Mv-tho">
+                                <rect key="frame" x="135.5" y="410.5" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWj-T6-Hek">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="close" destination="qo3-K0-n9I" eventType="touchUpInside" id="5Jr-a4-jHj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GOa-3n-NXj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cWj-T6-Hek" firstAttribute="top" secondItem="GOa-3n-NXj" secondAttribute="top" constant="30" id="ZQZ-Se-T22"/>
+                            <constraint firstItem="cWj-T6-Hek" firstAttribute="leading" secondItem="GOa-3n-NXj" secondAttribute="leading" constant="30" id="dH2-BV-D6h"/>
+                            <constraint firstItem="I1f-Mv-tho" firstAttribute="centerY" secondItem="W1f-SH-SLw" secondAttribute="centerY" id="kIQ-lN-GUR"/>
+                            <constraint firstItem="I1f-Mv-tho" firstAttribute="centerX" secondItem="W1f-SH-SLw" secondAttribute="centerX" id="z7M-Q2-Hfl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1W3-tm-aLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="77"/>
+        </scene>
+        <!--Tomorrows List-->
+        <scene sceneID="e7A-A0-Tnq">
+            <objects>
+                <viewController id="s8V-Ty-jA2" customClass="TomorrowsList" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OmB-eb-FM4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEG-43-aK4">
+                                <rect key="frame" x="28" y="44" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="close" destination="s8V-Ty-jA2" eventType="touchUpInside" id="VvP-vD-R1x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomorrow's To-Do List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSN-nQ-x43">
+                                <rect key="frame" x="120.5" y="410.5" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ndk-DJ-OQy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NSN-nQ-x43" firstAttribute="centerY" secondItem="OmB-eb-FM4" secondAttribute="centerY" id="eSW-ua-SFv"/>
+                            <constraint firstItem="NSN-nQ-x43" firstAttribute="centerX" secondItem="OmB-eb-FM4" secondAttribute="centerX" id="ph6-lC-Itr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ew2-Cy-Twv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="78"/>
+        </scene>
+        <!--Todays Weather-->
+        <scene sceneID="a4P-pm-7eO">
+            <objects>
+                <viewController id="1cO-5Y-iLB" customClass="TodaysWeather" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jl9-bH-p9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vff-hb-gyD">
+                                <rect key="frame" x="30" y="30" width="30" height="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="close" destination="1cO-5Y-iLB" eventType="touchUpInside" id="GRc-kc-xkU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O43-q1-6Y3">
+                                <rect key="frame" x="143" y="410.5" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xaX-2A-SMn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vff-hb-gyD" firstAttribute="top" secondItem="xaX-2A-SMn" secondAttribute="top" constant="30" id="652-dB-vMD"/>
+                            <constraint firstItem="O43-q1-6Y3" firstAttribute="centerX" secondItem="Jl9-bH-p9v" secondAttribute="centerX" id="OEG-GJ-zAm"/>
+                            <constraint firstItem="Vff-hb-gyD" firstAttribute="leading" secondItem="xaX-2A-SMn" secondAttribute="leading" constant="30" id="iFj-00-rAa"/>
+                            <constraint firstItem="O43-q1-6Y3" firstAttribute="centerY" secondItem="Jl9-bH-p9v" secondAttribute="centerY" id="sWA-zz-qey"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcr-PS-rcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8115942028987" y="76.339285714285708"/>
         </scene>
     </scenes>
     <resources>

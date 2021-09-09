@@ -1,13 +1,13 @@
 //
-//  TodaysList.swift
+//  TomorrowsList.swift
 //  To-do list
 //
-//  Created by Dayna Grigsby on 9/8/21.
+//  Created by Dayna Grigsby on 9/9/21.
 //
 
 import UIKit
 
-class TodaysList: UIViewController {
+class TomorrowsList: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,7 @@ class TodaysList: UIViewController {
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }
+
     /*
     // MARK: - Navigation
 
